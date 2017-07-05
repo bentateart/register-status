@@ -1,0 +1,4 @@
+---
+applications:
+- name: register-status
+  memory: 128M
