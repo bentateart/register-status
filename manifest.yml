@@ -2,3 +2,4 @@
 applications:
 - name: register-status
   memory: 128M
+  buildpack: staticfile_buildpack
