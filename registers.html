@@ -21,7 +21,7 @@
             <nav aria-hidden="true" aria-label="Top Level Navigation" class="header__navigation" id="navigation">
                 <ul>
                     <li class=""><a href="https://registers.cloudapps.digital/using-registers">Using registers</a></li>
-                    <li class="active"><a href="file:///Users/bentate/Prototypes/reg-register-status/registers.html">Find a register</a></li>
+                    <li class="active"><a href="registers.html">View registers</a></li>
                     <li><a href="https://registers.cloudapps.digital/support">Support</a></li>
                     <li><a target="blank" href="https://registers-docs.cloudapps.digital/">Documentation</a></li>
                 </ul>
@@ -33,39 +33,33 @@
             <ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
                 <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">Components</span></a></li>
                 <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">Registers</span></a></li>
-                <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Find a register</span></a></li>
+                <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="registers.html" itemprop="item"><span itemprop="name">View registers</span></a></li>
             </ol>
         </nav>
         <div class="container">
             <div class="grid-row">
                 <div class="column-one-whole">
                     <div class="govspeak">
-                        <h1 id="registers-pipeline">Find a register</h1></div>
+                        <h1 id="registers-pipeline">View registers</h1></div>
                 </div>
             </div>
             <div class="grid-row">
                 <div class="column-one-quarter">
                     <div class="data border-beta" style="border-top: none; padding-top: 0px;">
-                        <span class="data-item bold-xxlarge" style="color: #005ea5;">13</span>
-                        <span class="data-item bold-xsmall">
-                            <a href="file:///Users/bentate/Prototypes/reg-register-status/registers-ready.html">Registers ready for use</a>
-                        </span>
+                        <a href="registers-ready.html" style="text-decoration: none;">
+                            <span class="data-item bold-xxlarge">13</span>
+                            <span class="data-item bold-xsmall" style="text-decoration: underline;">Registers ready for use</span>
+                        </a>
                     </div>
                 </div>
-                <div class="column-one-quarter">
-                    <div class="data border-alpha" style="border-top: none; padding-top: 0;">
-                        <span class="data-item bold-xxlarge" style="color: #005ea5;">40</span>
-                        <span class="data-item bold-xsmall">
-                            <a href="file:///Users/bentate/Prototypes/reg-register-status/registers-notready.html">Registers we're working on</a>
-                        </span>
+                 <div class="column-one-quarter">
+                    <div class="data border-beta" style="border-top: none; padding-top: 0px;">
+                        <a href="registers-notready.html" style="text-decoration: none;">
+                            <span class="data-item bold-xxlarge">40</span>
+                            <span class="data-item bold-xsmall" style="text-decoration: underline;">Registers ready for use</span>
+                        </a>
                     </div>
                 </div>
-                <!--<div class="column-one-quarter">
-                    <div class="data border-discovery"><span class="data-item bold-xxlarge">7</span><span class="data-item bold-xsmall"><a href="https://registers.cloudapps.digital/registers?phase=Alpha">Registers in alpha</a></span></div>
-                </div>-->
-                <!--<div class="column-one-quarter">
-                    <div class="data border-discovery"><span class="data-item bold-xxlarge">13</span><span class="data-item bold-xsmall"><a href="https://registers.cloudapps.digital/registers?phase=Beta">Registers in beta</a></span></div>
-                </div>-->
             </div>
             <div class="grid-row">
                 <div class="column-two-thirds js-hidden">
@@ -85,9 +79,9 @@
                     <table class="register-status-table table-collapsible">
                         <thead>
                             <tr>
-                                <th role="columnheader" scope="col"><a class="sort_link " href="https://registers.cloudapps.digital/registers?q%5Bs%5D=name+desc">Register</a></th>
-                                <th role="columnheader" scope="col"><a class="sort_link " href="https://registers.cloudapps.digital/registers?q%5Bs%5D=phase_name+desc">Status</a></th>
-                                <th role="columnheader" scope="col"><a class="sort_link " href="https://registers.cloudapps.digital/registers?q%5Bs%5D=register_authority+asc">Managed by</a></th>
+                                <th role="columnheader" scope="col"><a class="sort_link " href="#">Register</a></th>
+                                <th role="columnheader" scope="col"><a class="sort_link " href="#">Status</a></th>
+                                <th role="columnheader" scope="col"><a class="sort_link " href="#">Managed by</a></th>
                                 <th role="columnheader" scope="col"></th>
                             </tr>
                         </thead>
@@ -97,7 +91,7 @@
                                     <h4 class="heading-xsmall">Country</h4>
                                     <p>British English-language names and descriptive terms for countries</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo foreign-commonwealth-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Foreign &amp; Commonwealth Office</span></div>
@@ -110,7 +104,7 @@
                                     <h4 class="heading-xsmall">Datatype</h4>
                                     <p>Datatypes constraining values used by register fields</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo cabinet-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
@@ -123,7 +117,7 @@
                                     <h4 class="heading-xsmall">Field</h4>
                                     <p>Field names eligible for use in a register</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo cabinet-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
@@ -136,7 +130,7 @@
                                     <h4 class="heading-xsmall">Government organisation</h4>
                                     <p>Government department, agency or teams that exist on gov.uk</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo cabinet-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
@@ -149,7 +143,7 @@
                                     <h4 class="heading-xsmall">Government service</h4>
                                     <p>Government services that have a government service domain (service.gov.uk)</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo cabinet-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
@@ -162,7 +156,7 @@
                                     <h4 class="heading-xsmall">Internal drainage board</h4>
                                     <p>Internal drainage boards are public bodies that manage water levels in areas where there is a special need for drainage. </p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-environment-food-rural-affairs">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Environment, Food &amp; Rural Affairs</span></div>
@@ -175,7 +169,7 @@
                                     <h4 class="heading-xsmall">Local authority eng</h4>
                                     <p>Local authorities in England.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-communities-and-local-government">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Communities and Local Government</span></div>
@@ -188,7 +182,7 @@
                                     <h4 class="heading-xsmall">Local authority sct</h4>
                                     <p>Local authorities in scotland</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo scottish-government">
                                         <div class="logo-container  "><span>Scottish Government</span></div>
@@ -201,7 +195,7 @@
                                     <h4 class="heading-xsmall">Local authority type</h4>
                                     <p>Types of local government organisations in the United Kingdom</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-communities-and-local-government">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Communities and Local Government</span></div>
@@ -214,7 +208,7 @@
                                     <h4 class="heading-xsmall">Prison estate</h4>
                                     <p>The Prison estate in England and Wales as defined by HM Prison and Probation Service.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo ministry-of-justice">
                                         <div class="logo-container logo-with-crest crest-org"><span>Ministry of Justice</span></div>
@@ -227,7 +221,7 @@
                                     <h4 class="heading-xsmall">Register</h4>
                                     <p>Registers maintained by UK government</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo cabinet-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
@@ -240,7 +234,7 @@
                                     <h4 class="heading-xsmall">Registration district</h4>
                                     <p>Registration districts are administrative regions which exists for the purpose of civil registration of births, marriages, and deaths and civil partnerships.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo hm-passport-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>HM Passport Office</span></div>
@@ -253,7 +247,7 @@
                                     <h4 class="heading-xsmall">Territory</h4>
                                     <p>British English-language names and descriptive terms for political, administrative and geographical entities that aren’t recognised as countries by the UK</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Ready to use</h4></td>
+                                <td data-title="Phase: "><span>Ready for use</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo foreign-and-commonwealth-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Foreign and Commonwealth Office</span></div>
@@ -266,7 +260,7 @@
                                     <h4 class="heading-xsmall">Industrial classification</h4>
                                     <p>A register of standard industrial classifications for major businesses and industries. Industrial classifications are assigned to businesses and industries based on common characteristics of their products, services, production and delivery systems.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In progress</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo government-statistical-service">
                                         <div class="logo-container logo-with-crest crest-org"><span>Government Statistical Service</span></div>
@@ -279,7 +273,7 @@
                                     <h4 class="heading-xsmall">Notifiable animal disease</h4>
                                     <p>Animal diseases in England, Scotland and Wales that must legally be reported to the Animal and Plant Health Agency.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In progress</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-environment-food-rural-affairs">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Environment, Food &amp; Rural Affairs</span></div>
@@ -292,7 +286,7 @@
                                     <h4 class="heading-xsmall">Notifiable animal disease confirmation category</h4>
                                     <p>Confirmation categories for animal diseases in England, Scotland and Wales that must legally be reported to the Animal and Plant Health Agency.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In progress</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-environment-food-rural-affairs">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Environment, Food &amp; Rural Affairs</span></div>
@@ -305,7 +299,7 @@
                                     <h4 class="heading-xsmall">Notifiable animal disease investigation category</h4>
                                     <p>Investigation categories for animal diseases in England, Scotland and Wales that must legally be reported to the Animal and Plant Health Agency.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In progress</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-environment-food-rural-affairs">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Environment, Food &amp; Rural Affairs</span></div>
@@ -318,7 +312,7 @@
                                     <h4 class="heading-xsmall">Occupation</h4>
                                     <p>Classifications of all occupations in which work is performed for pay or profit.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In progress</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo government-statistical-service">
                                         <div class="logo-container logo-with-crest crest-org"><span>Government Statistical Service</span></div>
@@ -331,7 +325,7 @@
                                     <h4 class="heading-xsmall">Principal local authority</h4>
                                     <p>Local authorities in Wales.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In progress</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo welsh-government">
                                         <div class="logo-container logo-with-crest crest-wales"><span>Welsh Government</span></div>
@@ -344,7 +338,7 @@
                                     <h4 class="heading-xsmall">School Eng</h4>
                                     <p>Schools in England legally registered to provide full time education to pupils of compulsory school age</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In progress</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-education">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
@@ -357,7 +351,7 @@
                                     <h4 class="heading-xsmall">Government domain</h4>
                                     <p>Internet domains owned by government departments and agencies</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Just started</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo cabinet-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
@@ -368,7 +362,7 @@
                             <tr class="js-filter-item" data-filter-terms="Jobcentre">
                                 <th data-title="22">
                                     <h4 class="heading-xsmall">Jobcentre</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Just started</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-work-and-pensions">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Work and Pensions</span></div>
@@ -381,7 +375,7 @@
                                     <h4 class="heading-xsmall">Social housing provider</h4>
                                     <p>Registered providers of social housing.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Just started</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo homes-and-communities-agency">
                                         <div class="logo-container logo-with-crest crest-org"><span>Homes and Communities Agency</span></div>
@@ -394,7 +388,7 @@
                                     <h4 class="heading-xsmall">Statistical Geography</h4>
                                     <p>Geographies that are used for official statistics</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">Just started</h4></td>
+                                <td data-title="Phase: "><span>Open for feedback</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo office-for-national-statistics">
                                         <div class="logo-container logo-with-crest crest-org"><span>Office for National Statistics</span></div>
@@ -407,7 +401,7 @@
                                     <h4 class="heading-xsmall">Apprentice assessment organisation</h4>
                                     <p>Assessed organisations suitable to conduct independent end-point assessment of apprentices and be in receipt of public funds.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-education">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
@@ -420,7 +414,7 @@
                                     <h4 class="heading-xsmall">Authorised Individual Savings Account manager</h4>
                                     <p>Persons authorised by HM Revenue and Customs as managers of Individual Savings Accounts (ISAs) under the ISA Regulations 1998.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo hm-revenue-customs">
                                         <div class="logo-container logo-with-crest crest-hmrc"><span>HM Revenue &amp; Customs</span></div>
@@ -433,7 +427,7 @@
                                     <h4 class="heading-xsmall">Charity</h4>
                                     <p>Organisations that have been recognised as charitable in law.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo charity-commission">
                                         <div class="logo-container logo-with-crest crest-org"><span>Charity Commission</span></div>
@@ -446,7 +440,7 @@
                                     <h4 class="heading-xsmall">Civil marriage and civil partnership venue</h4>
                                     <p>Premises that have been approved for civil marriages and civil partnerships in England and Wales.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo home-office">
                                         <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
@@ -459,7 +453,7 @@
                                     <h4 class="heading-xsmall">Clinical commissioning group</h4>
                                     <p>Clinically-led statutory National Health Service bodies responsible for the planning and commissioning of health care services for their local area</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo nhs-business-services-authority">
                                         <div class="logo-container logo-with-crest crest-org"><span>NHS Business Services Authority</span></div>
@@ -472,7 +466,7 @@
                                     <h4 class="heading-xsmall">Company</h4>
                                     <p>Legal entities registered under the Companies Acts.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo companies-house">
                                         <div class="logo-container logo-with-crest crest-org"><span>Companies House</span></div>
@@ -485,7 +479,7 @@
                                     <h4 class="heading-xsmall">Counting rules for reported crimes</h4>
                                     <p>The rules to be followed to ensure that crimes are recorded consistently and accurately.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo home-office">
                                         <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
@@ -498,7 +492,7 @@
                                     <h4 class="heading-xsmall">Court and tribunal</h4>
                                     <p>Criminal, civil and family courts and tribunals in England and Wales.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo ministry-of-justice">
                                         <div class="logo-container logo-with-crest crest-org"><span>Ministry of Justice</span></div>
@@ -511,7 +505,7 @@
                                     <h4 class="heading-xsmall">Dental practice</h4>
                                     <p>Premises approved to provide dental health services.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo nhs-business-services-authority">
                                         <div class="logo-container logo-with-crest crest-org"><span>NHS Business Services Authority</span></div>
@@ -524,7 +518,7 @@
                                     <h4 class="heading-xsmall">Family mediator</h4>
                                     <p>Trained individuals registered to mediate family disputes.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo ministry-of-justice">
                                         <div class="logo-container logo-with-crest crest-org"><span>Ministry of Justice</span></div>
@@ -537,7 +531,7 @@
                                     <h4 class="heading-xsmall">Fire authority</h4>
                                     <p>A statutory body made up of a committee of local councillors which oversees the policy and service delivery of a fire and rescue service within England and Wales.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo home-office">
                                         <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
@@ -550,7 +544,7 @@
                                     <h4 class="heading-xsmall">Fire station</h4>
                                     <p>Headquarters of fire brigades and England and Wales.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo home-office">
                                         <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
@@ -563,7 +557,7 @@
                                     <h4 class="heading-xsmall">Food authority</h4>
                                     <p>Bodies legally responsible for the regulation of food standards and inspections.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo food-standards-agency">
                                         <div class="logo-container logo-with-crest crest-org"><span>Food Standards Agency</span></div>
@@ -574,7 +568,7 @@
                             <tr class="js-filter-item" data-filter-terms="Foreign Office posts">
                                 <th data-title="38">
                                     <h4 class="heading-xsmall">Foreign Office posts</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo foreign-commonwealth-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Foreign &amp; Commonwealth Office</span></div>
@@ -587,7 +581,7 @@
                                     <h4 class="heading-xsmall">Further education establishment</h4>
                                     <p>Establishments in England legally registered to provide intermediate, advanced or follow-up qualifications necessary to progress into higher education or begin a specific career path.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-education">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
@@ -598,7 +592,7 @@
                             <tr class="js-filter-item" data-filter-terms="Government website">
                                 <th data-title="40">
                                     <h4 class="heading-xsmall">Government website</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo cabinet-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
@@ -609,7 +603,7 @@
                             <tr class="js-filter-item" data-filter-terms="GP practice">
                                 <th data-title="41">
                                     <h4 class="heading-xsmall">GP practice</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo nhs">
                                         <div class="logo-container  "><span>NHS</span></div>
@@ -620,7 +614,7 @@
                             <tr class="js-filter-item" data-filter-terms="Higher education establishment">
                                 <th data-title="42">
                                     <h4 class="heading-xsmall">Higher education establishment</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-education">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
@@ -633,7 +627,7 @@
                                     <h4 class="heading-xsmall">Local authority Northern Ireland</h4>
                                     <p>Local authorities in Northern Ireland.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo government-digital-service">
                                         <div class="logo-container  "><span>Government Digital Service</span></div>
@@ -644,7 +638,7 @@
                             <tr class="js-filter-item" data-filter-terms="Police force">
                                 <th data-title="44">
                                     <h4 class="heading-xsmall">Police force</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo home-office">
                                         <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
@@ -655,7 +649,7 @@
                             <tr class="js-filter-item" data-filter-terms="Police station">
                                 <th data-title="45">
                                     <h4 class="heading-xsmall">Police station</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo home-office">
                                         <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
@@ -668,7 +662,7 @@
                                     <h4 class="heading-xsmall">Qualification</h4>
                                     <p>A pass of an examination or an official completion of a course recognised in the UK.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-education">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
@@ -681,7 +675,7 @@
                                     <h4 class="heading-xsmall">Register office</h4>
                                     <p>Offices legally responsible for registering and holding records of births, deaths, marriages and civil partnerships.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo hm-passport-office">
                                         <div class="logo-container logo-with-crest crest-org"><span>HM Passport Office</span></div>
@@ -694,7 +688,7 @@
                                     <h4 class="heading-xsmall">School Wales</h4>
                                     <p>Schools in Wales legally registered to provide full time education to pupils of compulsory school age</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo welsh-government">
                                         <div class="logo-container logo-with-crest crest-wales"><span>Welsh government</span></div>
@@ -707,7 +701,7 @@
                                     <h4 class="heading-xsmall">UK</h4>
                                     <p>Constituent countries of the United Kingdom.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo ministry-of-justice">
                                         <div class="logo-container logo-with-crest crest-org"><span>Ministry of Justice</span></div>
@@ -720,7 +714,7 @@
                                     <h4 class="heading-xsmall">Vehicle category</h4>
                                     <p>Types of vehicles that can be driven depending on the type of driving license held.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-transport">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Transport</span></div>
@@ -733,7 +727,7 @@
                                     <h4 class="heading-xsmall">Vehicle colour</h4>
                                     <p>Colours used to identify a vehicle</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo driver-and-vehicle-licensing-agency">
                                         <div class="logo-container logo-with-crest crest-org"><span>Driver and Vehicle Licensing Agency</span></div>
@@ -744,7 +738,7 @@
                             <tr class="js-filter-item" data-filter-terms="Vehicle fuel type">
                                 <th data-title="52">
                                     <h4 class="heading-xsmall">Vehicle fuel type</h4></th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-transport">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Transport</span></div>
@@ -757,7 +751,7 @@
                                     <h4 class="heading-xsmall">Vehicle make</h4>
                                     <p>The names of companies that manufacture vehicles.</p>
                                 </th>
-                                <td data-title="Phase: "><h4 class="heading-xsmall">In the backlog</h4></td>
+                                <td data-title="Phase: "><span>In the backlog</span></td>
                                 <td data-title="Managed by: ">
                                     <div class="govuk-organisation-logo department-for-transport">
                                         <div class="logo-container logo-with-crest crest-org"><span>Department for Transport</span></div>
