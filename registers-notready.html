@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://registers.cloudapps.digital/registers -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="6JdF6FsTVWUKQi65c22Each0iPWMS9q5aRg9eP5J9gc8fNlsTiehT8OfjiIJ8hZmumf20RUIKVPqhXugI2P4LQ==">
+    <title>GOV.UK Registers - Registers</title>
+    <link rel="stylesheet" media="all" href="./registers/application-e623a1e1e3710bd5adeebd4dba3f946986ef6fd89ba9fd2c8a8c69ec9167485a.css">
+</head>
+
+<body class="js-enabled"><a class="skip-link" href="https://registers.cloudapps.digital/registers#main">Skip to main content</a>
+    <header class="header ">
+        <div class="header__container">
+            <div class="header__brand"><a href="https://registers.cloudapps.digital/"><span class="header__title">GOV.UK Registers<span class="phase-banner">Alpha</span></span></a></div>
+            <input aria-controls="navigation" aria-expanded="false" class="header__navigation-toggle-checkbox" id="show-menu" type="checkbox">
+            <label class="header__navigation-toggle" for="show-menu">Menu</label>
+            <nav aria-hidden="true" aria-label="Top Level Navigation" class="header__navigation" id="navigation">
+                <ul>
+                    <li class=""><a href="https://registers.cloudapps.digital/using-registers">Using registers</a></li>
+                    <li class="active"><a href="https://registers.cloudapps.digital/registers">Register pipeline</a></li>
+                    <li><a href="https://registers.cloudapps.digital/support">Support</a></li>
+                    <li><a target="blank" href="https://registers-docs.cloudapps.digital/">Documentation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" role="main">
+        <nav aria-label="Breadcrumbs" class="breadcrumbs">
+            <ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gov.uk/service-toolkit#components"><span itemprop="name">Components</span></a></li>
+                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://registers.cloudapps.digital/"><span itemprop="name">Registers</span></a></li>
+                <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="https://registers.cloudapps.digital/registers" itemprop="item"><span itemprop="name">Register pipeline</span></a></li>
+            </ol>
+        </nav>
+        <div class="container">
+            <div class="grid-row">
+                <div class="column-one-whole">
+                    <div class="govspeak">
+                        <h1 id="registers-pipeline">Registers pipeline</h1></div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <!--<div class="column-one-half">
+                    <div class="data border-beta"><span class="data-item bold-xxlarge">13</span><span class="data-item bold-xsmall"><a href="file:///Users/bentate/Prototypes/reg-register-status/registers-ready.html">Registers ready to use</a></span></div>
+                </div>-->
+                <div class="column-one-quarter">
+                    <div class="data border-alpha"><span class="data-item bold-xxlarge">40</span><span class="data-item bold-xsmall">Registers we're working on</span></div>
+                </div>
+                <!--<div class="column-one-quarter">
+                    <div class="data border-discovery"><span class="data-item bold-xxlarge">7</span><span class="data-item bold-xsmall"><a href="https://registers.cloudapps.digital/registers?phase=Alpha">Registers in alpha</a></span></div>
+                </div>-->
+                <!--<div class="column-one-quarter">
+                    <div class="data border-discovery"><span class="data-item bold-xxlarge">13</span><span class="data-item bold-xsmall"><a href="https://registers.cloudapps.digital/registers?phase=Beta">Registers in beta</a></span></div>
+                </div>-->
+            </div>
+            <div class="grid-row">
+                <div class="column-two-thirds js-hidden">
+                    <div aria-hidden="true" class="js-filter-list">
+                        <form class="js-filter-form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="form-label" for="search">Search for a register</label>
+                                    <input class="form-control form-control-3-4" id="search" name="search">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="column-one-whole">
+                    <h3 class="heading-small mq-small-only">Sort by:</h3>
+                    <table class="register-status-table table-collapsible">
+                        <thead>
+                            <tr>
+                                <th role="columnheader" scope="col"><a class="sort_link " href="https://registers.cloudapps.digital/registers?q%5Bs%5D=name+desc">Register</a></th>
+                                <th role="columnheader" scope="col"><a class="sort_link " href="https://registers.cloudapps.digital/registers?q%5Bs%5D=phase_name+desc">Status</a></th>
+                                <th role="columnheader" scope="col"><a class="sort_link " href="https://registers.cloudapps.digital/registers?q%5Bs%5D=register_authority+asc">Managed by</a></th>
+                                <th role="columnheader" scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="js-filter-block">
+                            <tr class="js-filter-item" data-filter-terms="Industrial classification">
+                                <th data-title="14">
+                                    <h4 class="heading-xsmall">Industrial classification</h4>
+                                    <p>A register of standard industrial classifications for major businesses and industries. Industrial classifications are assigned to businesses and industries based on common characteristics of their products, services, production and delivery systems.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In progress</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo government-statistical-service">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Government Statistical Service</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://industrial-classification.alpha.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/industrial-classification">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Notifiable animal disease">
+                                <th data-title="15">
+                                    <h4 class="heading-xsmall">Notifiable animal disease</h4>
+                                    <p>Animal diseases in England, Scotland and Wales that must legally be reported to the Animal and Plant Health Agency.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In progress</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-environment-food-rural-affairs">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Environment, Food &amp; Rural Affairs</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://notifiable-animal-disease.alpha.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/notifiable-animal-disease">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Notifiable animal disease confirmation category">
+                                <th data-title="16">
+                                    <h4 class="heading-xsmall">Notifiable animal disease confirmation category</h4>
+                                    <p>Confirmation categories for animal diseases in England, Scotland and Wales that must legally be reported to the Animal and Plant Health Agency.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In progress</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-environment-food-rural-affairs">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Environment, Food &amp; Rural Affairs</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://notifiable-animal-disease-confirmation-category.alpha.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/notifiable-animal-disease-confirmation-category">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Notifiable animal disease investigation category">
+                                <th data-title="17">
+                                    <h4 class="heading-xsmall">Notifiable animal disease investigation category</h4>
+                                    <p>Investigation categories for animal diseases in England, Scotland and Wales that must legally be reported to the Animal and Plant Health Agency.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In progress</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-environment-food-rural-affairs">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Environment, Food &amp; Rural Affairs</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://notifiable-animal-disease-investigation-category.alpha.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/notifiable-animal-disease-investigation-category">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Occupation">
+                                <th data-title="18">
+                                    <h4 class="heading-xsmall">Occupation</h4>
+                                    <p>Classifications of all occupations in which work is performed for pay or profit.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In progress</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo government-statistical-service">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Government Statistical Service</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="http://occupation.alpha.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/occupation">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Principal local authority">
+                                <th data-title="19">
+                                    <h4 class="heading-xsmall">Principal local authority</h4>
+                                    <p>Local authorities in Wales.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In progress</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo welsh-government">
+                                        <div class="logo-container logo-with-crest crest-wales"><span>Welsh Government</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="http://principal-local-authority.alpha.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/principal-local-authority">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="School Eng">
+                                <th data-title="20">
+                                    <h4 class="heading-xsmall">School Eng</h4>
+                                    <p>Schools in England legally registered to provide full time education to pupils of compulsory school age</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In progress</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-education">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://school-eng.alpha.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/school-eng">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Government domain">
+                                <th data-title="21">
+                                    <h4 class="heading-xsmall">Government domain</h4>
+                                    <p>Internet domains owned by government departments and agencies</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">Just started</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo cabinet-office">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://government-domain.discovery.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/government-domain">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Jobcentre">
+                                <th data-title="22">
+                                    <h4 class="heading-xsmall">Jobcentre</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">Just started</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-work-and-pensions">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Work and Pensions</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="http://jobcentre.discovery.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/jobcentre">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Social housing provider">
+                                <th data-title="23">
+                                    <h4 class="heading-xsmall">Social housing provider</h4>
+                                    <p>Registered providers of social housing.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">Just started</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo homes-and-communities-agency">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Homes and Communities Agency</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://social-housing-provider.discovery.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/social-housing-provider">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Statistical Geography">
+                                <th data-title="24">
+                                    <h4 class="heading-xsmall">Statistical Geography</h4>
+                                    <p>Geographies that are used for official statistics</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">Just started</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo office-for-national-statistics">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Office for National Statistics</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://statistical-geography.discovery.openregister.org/">View register</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Apprentice assessment organisation">
+                                <th data-title="25">
+                                    <h4 class="heading-xsmall">Apprentice assessment organisation</h4>
+                                    <p>Assessed organisations suitable to conduct independent end-point assessment of apprentices and be in receipt of public funds.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-education">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Authorised Individual Savings Account manager">
+                                <th data-title="26">
+                                    <h4 class="heading-xsmall">Authorised Individual Savings Account manager</h4>
+                                    <p>Persons authorised by HM Revenue and Customs as managers of Individual Savings Accounts (ISAs) under the ISA Regulations 1998.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo hm-revenue-customs">
+                                        <div class="logo-container logo-with-crest crest-hmrc"><span>HM Revenue &amp; Customs</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Charity">
+                                <th data-title="27">
+                                    <h4 class="heading-xsmall">Charity</h4>
+                                    <p>Organisations that have been recognised as charitable in law.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo charity-commission">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Charity Commission</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Civil marriage and civil partnership venue">
+                                <th data-title="28">
+                                    <h4 class="heading-xsmall">Civil marriage and civil partnership venue</h4>
+                                    <p>Premises that have been approved for civil marriages and civil partnerships in England and Wales.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo home-office">
+                                        <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Clinical commissioning group">
+                                <th data-title="29">
+                                    <h4 class="heading-xsmall">Clinical commissioning group</h4>
+                                    <p>Clinically-led statutory National Health Service bodies responsible for the planning and commissioning of health care services for their local area</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo nhs-business-services-authority">
+                                        <div class="logo-container logo-with-crest crest-org"><span>NHS Business Services Authority</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Company">
+                                <th data-title="30">
+                                    <h4 class="heading-xsmall">Company</h4>
+                                    <p>Legal entities registered under the Companies Acts.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo companies-house">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Companies House</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Counting rules for reported crimes">
+                                <th data-title="31">
+                                    <h4 class="heading-xsmall">Counting rules for reported crimes</h4>
+                                    <p>The rules to be followed to ensure that crimes are recorded consistently and accurately.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo home-office">
+                                        <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Court and tribunal">
+                                <th data-title="32">
+                                    <h4 class="heading-xsmall">Court and tribunal</h4>
+                                    <p>Criminal, civil and family courts and tribunals in England and Wales.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo ministry-of-justice">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Ministry of Justice</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Dental practice">
+                                <th data-title="33">
+                                    <h4 class="heading-xsmall">Dental practice</h4>
+                                    <p>Premises approved to provide dental health services.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo nhs-business-services-authority">
+                                        <div class="logo-container logo-with-crest crest-org"><span>NHS Business Services Authority</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Family mediator">
+                                <th data-title="34">
+                                    <h4 class="heading-xsmall">Family mediator</h4>
+                                    <p>Trained individuals registered to mediate family disputes.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo ministry-of-justice">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Ministry of Justice</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Fire authority">
+                                <th data-title="35">
+                                    <h4 class="heading-xsmall">Fire authority</h4>
+                                    <p>A statutory body made up of a committee of local councillors which oversees the policy and service delivery of a fire and rescue service within England and Wales.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo home-office">
+                                        <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Fire station">
+                                <th data-title="36">
+                                    <h4 class="heading-xsmall">Fire station</h4>
+                                    <p>Headquarters of fire brigades and England and Wales.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo home-office">
+                                        <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Food authority">
+                                <th data-title="37">
+                                    <h4 class="heading-xsmall">Food authority</h4>
+                                    <p>Bodies legally responsible for the regulation of food standards and inspections.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo food-standards-agency">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Food Standards Agency</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Foreign Office posts">
+                                <th data-title="38">
+                                    <h4 class="heading-xsmall">Foreign Office posts</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo foreign-commonwealth-office">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Foreign &amp; Commonwealth Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Further education establishment">
+                                <th data-title="39">
+                                    <h4 class="heading-xsmall">Further education establishment</h4>
+                                    <p>Establishments in England legally registered to provide intermediate, advanced or follow-up qualifications necessary to progress into higher education or begin a specific career path.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-education">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Government website">
+                                <th data-title="40">
+                                    <h4 class="heading-xsmall">Government website</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo cabinet-office">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Cabinet Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="GP practice">
+                                <th data-title="41">
+                                    <h4 class="heading-xsmall">GP practice</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo nhs">
+                                        <div class="logo-container  "><span>NHS</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Higher education establishment">
+                                <th data-title="42">
+                                    <h4 class="heading-xsmall">Higher education establishment</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-education">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Local authority Northern Ireland">
+                                <th data-title="43">
+                                    <h4 class="heading-xsmall">Local authority Northern Ireland</h4>
+                                    <p>Local authorities in Northern Ireland.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo government-digital-service">
+                                        <div class="logo-container  "><span>Government Digital Service</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Police force">
+                                <th data-title="44">
+                                    <h4 class="heading-xsmall">Police force</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo home-office">
+                                        <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Police station">
+                                <th data-title="45">
+                                    <h4 class="heading-xsmall">Police station</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo home-office">
+                                        <div class="logo-container logo-with-crest crest-ho"><span>Home Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Qualification">
+                                <th data-title="46">
+                                    <h4 class="heading-xsmall">Qualification</h4>
+                                    <p>A pass of an examination or an official completion of a course recognised in the UK.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-education">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Education</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Register office">
+                                <th data-title="47">
+                                    <h4 class="heading-xsmall">Register office</h4>
+                                    <p>Offices legally responsible for registering and holding records of births, deaths, marriages and civil partnerships.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo hm-passport-office">
+                                        <div class="logo-container logo-with-crest crest-org"><span>HM Passport Office</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a href="https://registers.cloudapps.digital/registers/register-office">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="School Wales">
+                                <th data-title="48">
+                                    <h4 class="heading-xsmall">School Wales</h4>
+                                    <p>Schools in Wales legally registered to provide full time education to pupils of compulsory school age</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo welsh-government">
+                                        <div class="logo-container logo-with-crest crest-wales"><span>Welsh government</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="UK">
+                                <th data-title="49">
+                                    <h4 class="heading-xsmall">UK</h4>
+                                    <p>Constituent countries of the United Kingdom.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo ministry-of-justice">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Ministry of Justice</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Vehicle category">
+                                <th data-title="50">
+                                    <h4 class="heading-xsmall">Vehicle category</h4>
+                                    <p>Types of vehicles that can be driven depending on the type of driving license held.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-transport">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Transport</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Vehicle colour">
+                                <th data-title="51">
+                                    <h4 class="heading-xsmall">Vehicle colour</h4>
+                                    <p>Colours used to identify a vehicle</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo driver-and-vehicle-licensing-agency">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Driver and Vehicle Licensing Agency</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "><a target="blank" href="https://vehicle-colour.discovery.openregister.org/">View register</a><a href="https://registers.cloudapps.digital/registers/vehicle-colour">View history</a></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Vehicle fuel type">
+                                <th data-title="52">
+                                    <h4 class="heading-xsmall">Vehicle fuel type</h4></th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-transport">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Transport</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                            <tr class="js-filter-item" data-filter-terms="Vehicle make">
+                                <th data-title="53">
+                                    <h4 class="heading-xsmall">Vehicle make</h4>
+                                    <p>The names of companies that manufacture vehicles.</p>
+                                </th>
+                                <td data-title="Phase: "><span class="alpha status">In the backlog</span></td>
+                                <td data-title="Managed by: ">
+                                    <div class="govuk-organisation-logo department-for-transport">
+                                        <div class="logo-container logo-with-crest crest-org"><span>Department for Transport</span></div>
+                                    </div>
+                                </td>
+                                <td class="links" data-title="View more: "></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="group js-footer" id="footer" role="contentinfo">
+        <div class="footer-wrapper">
+            <div class="footer-meta">
+                <div class="footer-meta-inner">
+                    <div class="open-government-licence">
+                        <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                        <p>All content is available under the
+                            <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>,</p>
+                    </div>
+                </div>
+                <div class="copyright"><a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a></div>
+            </div>
+        </div>
+    </footer>
+    <!--<script type="text/javascript" async="" src="./GOV.UK Registers - Registers_files/ga.js"></script>-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-86101042-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script src="./registers/application-7d99bddd1a7a11a2c74adfe16dbff4272c27ba54b89b206c9248add18b56b0ad.js"></script>
+    <script>
+        document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    <script>
+        jQuery(function($) {
+            GOVUK.filterListItems.init();
+        });
+    </script>
+</body>
+
+</html>
